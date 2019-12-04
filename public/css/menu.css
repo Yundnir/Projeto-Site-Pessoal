@@ -1,0 +1,121 @@
+
+.hub {
+    background-color: rgba(255, 255, 255, 0.829);
+    border-radius: 15px;
+    border: 5px darkolivegreen solid;
+    height: 2000px;
+    width: 1100px;
+    margin: auto;
+}
+
+#menu ul {
+    padding:0px;
+    margin:0px;
+    background-color:rgb(49, 48, 107);
+    list-style:none;
+    border-radius: 5px;
+    border: 5px solid black;
+    height: 75px;
+}
+#menu ul li { 
+    display: inline; 
+}
+#menu ul li a {
+    padding: 2px 10px;
+    height: 27px;
+    display: inline-block;
+    background-color:rgb(49, 48, 107);
+    color: rgb(255, 238, 0);
+    text-decoration: none;
+    border-bottom:7px solid rgb(190, 162, 0);
+    padding: 20px;
+    margin-left: 92%;
+}
+#menu ul li a:hover {
+    background-color:rgb(7, 5, 141);
+    color: rgb(255, 230, 0);
+    border-bottom: 5px solid rgb(255, 217, 0);
+}
+
+#menu #imag img{
+    height: 80px;
+    width: 180px;
+    margin-left: 43%;
+    position: absolute;
+}
+
+.image {
+background-image: url("../img/summoner.jpg");
+width: 531px;
+height: 380px;
+border-radius: 2px;
+border: 3px solid rgb(133, 77, 26);
+}
+
+/*
+.campeoes {
+    background-image: url("../img/champ.jpg");
+    border-radius: 1px;
+    border: 1px black solid;
+    width: 915px;
+    height: 720px;
+}
+*/
+
+#img_champs {
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 2px;
+    background-color: darkgray;
+    width: 1000px;
+    height: 1300px;
+}
+
+#illaoi img{
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 280px;
+    height: 235px;
+    margin-right: 65%;
+    border-radius: 7px;
+    border: 3px solid black;
+}
+
+#nunu img{
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 280px;
+    height: 235px;
+    margin-right: 65%;
+    border-radius: 7px;
+    border: 3px solid black;
+}
+
+#pantheon img{
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 280px;
+    height: 235px;
+    margin-right: 65%;
+    border-radius: 7px;
+    border: 3px solid black;
+}
+
+#ashe img{
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 280px;
+    height: 235px;
+    margin-right: 65%;
+    border-radius: 7px;
+    border: 3px solid black;
+}
+
+#shen img{
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 280px;
+    height: 235px;
+    margin-right: 65%;
+    border-radius: 7px;
+    border: 3px solid black;
+}

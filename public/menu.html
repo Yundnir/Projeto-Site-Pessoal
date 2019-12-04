@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Menu - LoL OpenBook  </title>
+    <link rel="stylesheet" href="./css/menu.css">
+    
+</head>
+<body background="./img/logo.jpg">
+    
+        <nav id="menu">
+            <ul>
+                <!--
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Missão</a></li>
+                <li><a href="#">Links</a></li>
+                -->
+                <div id="imag">
+                        <img src="img/lol_logo.png">
+                    </div>
+                <li><a href="./tela_login.html">Sair</a></li>
+            </ul>
+        </nav>
+<br> <br>
+<center>
+    <!--
+    <embed src="early_game.mp3" hidden="true" loop="infinite" autostart="TRUE">
+        -->
+        <!--
+    <h1 style="color: rgb(131, 131, 69)"> Olá, Invocador! </h1>
+    <br> <br> -->
+    <div class="hub module-border-wrap">
+    <h3 style="color: rgb(38, 107, 255)"> Está preparado para descobrir a história lendária de seu campeão <br> 
+    e arrebentar no seu jogo? Esperamos que sim! </h3> 
+    <br>
+    <hr>
+    <br>
+   <span style="color: slateblue">Antes de começarmos, diga-nos: aonde gostaria de jogar? </span><br>
+        <span style="color: darkgreen">
+        <label for="radio1">
+            <input type="radio" name="lane" onkeyup="top()" id="top"> Top (Topo) 
+        </label>
+        <label for="radio2">
+            <input type="radio" name="lane" onkeyup="jungle()" id="jg"> Jungle (Selva) 
+        </label>
+        <label for="radio3">
+            <input type="radio" name="lane" onkeyup="mid()" id="mid"> Mid (Meio) 
+        </label>
+        <label for="radio4">
+            <input type="radio" name="lane" onkeyup="adcarry()" id="adc"> Bot (Atirador)
+        </label>
+        <label for="radio5">
+            <input type="radio" name="lane" onkeyup="suport()"id="sup"> Sup (Suporte)
+        </label>
+        </span>
+    <br> <br>
+    <div class="image"> <span style="color: rgb(28, 172, 28)"> Summoner's Rift </span> <br><br><br><br><br><br>
+    <br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br>
+    <span style="color: rgb(0, 201, 167)"> Você escolheu: "<span id="area" style="color: greenyellow">
+    </span>"</span>
+    </div> 
+    <br>
+    <hr>
+    <br> 
+    <span style="color: rgb(83, 15, 104)"> Agora escolha seu campeão e veja algumas informações sobre ele 
+        <select id="champ" onchange="escolher()">
+            <option value="none"> Selecione seu Campeão </option>
+            <option value="ILLAOI"> Illaoi </option>
+            <option value="NUNU"> Nunu & Willump </option>
+            <option value="PANTHEON"> Pantheon </option>
+            <option value="GALIO"> Galio </option>
+            <option value="ASHE"> Ashe </option>
+        </select>
+    </span>
+    <br> <br>
+    <!--<div class="campeoes"> <br>
+    </div>
+     -->
+
+    <div id="img_champs">
+        <div id="illaoi">
+           <img src="img/illaoi2.jpg">
+        </div>
+
+        <div id="nunu">
+           <img src="img/nunu2.jpg">
+        </div>
+
+        <div id="pantheon">
+           <img src="img/pant2.jpg">
+        </div>
+
+        <div id="ashe">
+           <img src="img/ashe2.jpg">
+        </div>
+
+        <div id="shen">
+           <img src="img/shen2.jpg">
+        </div>
+    </div>
+</div>
+</center>
+</body>
+</html>
+
+<script>
+    var selec_champ = champ.value;
+
+    function select_lane() {
+        area.innerHTML = `${lane.value}`;
+        
+        
+    }
+
+    function escolher() {
+        
+    }
+</script>

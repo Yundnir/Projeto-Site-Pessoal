@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Torne-se um Invocador! - LoL OpenBook </title>
+    <link rel="stylesheet" href="./css/cadastro.css">
+</head>
+<center>
+
+    <body background="./img/howling.jpg">
+        <div class="noinp">
+            <h1 style="color: lightseagreen"> Para tornar-se um Invocador, </h1>
+            <h3 style="color: lightseagreen"> precisamos de algumas informações cadastradas. </h3> <br>
+            <br>
+
+            <div class="inp">
+                <form id="form_cadastro" method="post" onsubmit="return cadastrar()">
+
+                    <input type="text" id="nome" name="nome" class="inp" placeholder="Nome Completo..." autofocus> <br>
+                    <br>
+                    <input type="text" id="email" name="email" class="inp" placeholder="Email..."> <br>
+                    <br>
+                    <input id="nickname" name="nick" class="inp" placeholder="Apelido..."> <br>
+                    <br>
+                    <input type="password" id="senha" name="senha" class="inp" placeholder="Senha..."> <br>
+                    <br>
+                    <input type="password" id="confirmar_senha" class="inp" placeholder="Confirme sua Senha..."> <br>
+                    <br>
+                    <br>
+            </div>
+            <button id="btn_juntar"> <span style="color: lightseagreen">Juntar-se </span> </button>
+            </form>
+</center>
+</body>
+
+</html>
+
+<script>
+    function cadastrar() {
+
+        var formulario = new URLSearchParams(new FormData(form_cadastro));
+        fetch("/usuarios/cadastrar", {
+            method: "POST",
+            body: formulario
+        }).then(function (response) {
+            if (response.ok) {
+                window.location.href = 'tela_login.html';
+            } else {
+                console.log('Erro de cadastro!');
+            }
+        });
+        return false;
+    }
+</script>
