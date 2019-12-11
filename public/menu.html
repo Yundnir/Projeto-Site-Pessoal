@@ -40,28 +40,27 @@
     <br>
    <span style="color: slateblue">Antes de começarmos, diga-nos: aonde gostaria de jogar? </span><br>
         <span style="color: darkgreen">
-        <label for="radio1">
-            <input type="radio" name="lane" onkeyup="top()" id="top"> Top (Topo) 
+        <label for="top">
+            <input type="radio" name="lane" id="top" onclick="teste('TOP')"> Top (Topo) 
         </label>
-        <label for="radio2">
-            <input type="radio" name="lane" onkeyup="jungle()" id="jg"> Jungle (Selva) 
+        <label for="jg">
+            <input type="radio" name="lane"  id="jg" onclick="teste('JUNGLE')"> Jungle (Selva) 
         </label>
-        <label for="radio3">
-            <input type="radio" name="lane" onkeyup="mid()" id="mid"> Mid (Meio) 
+        <label for="mid">
+            <input type="radio" name="lane" id="mid" onclick="teste('MID')"> Mid (Meio) 
         </label>
-        <label for="radio4">
-            <input type="radio" name="lane" onkeyup="adcarry()" id="adc"> Bot (Atirador)
+        <label for="adc">
+            <input type="radio" name="lane" id="adc" onclick="teste('ADCARRY')"> Bot (Atirador)
         </label>
-        <label for="radio5">
-            <input type="radio" name="lane" onkeyup="suport()"id="sup"> Sup (Suporte)
+        <label for="sup">
+            <input type="radio" name="lane" id="sup" onclick="teste('SUPORTE')"> Sup (Suporte)
         </label>
         </span>
     <br> <br>
-    <div class="image"> <span style="color: rgb(28, 172, 28)"> Summoner's Rift </span> <br><br><br><br><br><br>
-    <br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br>
-    <span style="color: rgb(0, 201, 167)"> Você escolheu: "<span id="area" style="color: greenyellow">
-    </span>"</span>
+    <div class="image"> <span style="color: rgb(28, 172, 28)"> Summoner's Rift </span> 
+
+    <p id="area" class="ll"> Você escolheu: </p>
+    
     </div> 
     <br>
     <hr>
@@ -69,11 +68,11 @@
     <span style="color: rgb(83, 15, 104)"> Agora escolha seu campeão e veja algumas informações sobre ele 
         <select id="champ" onchange="escolher()">
             <option value="none"> Selecione seu Campeão </option>
-            <option value="ILLAOI"> Illaoi </option>
-            <option value="NUNU"> Nunu & Willump </option>
-            <option value="PANTHEON"> Pantheon </option>
-            <option value="TRISTANA"> Tristana </option>
-            <option value="SHEN"> Shen </option>
+            <option value="illaoi"> Illaoi </option>
+            <option value="nunu"> Nunu & Willump </option>
+            <option value="pantheon"> Pantheon </option>
+            <option value="tristana"> Tristana </option>
+            <option value="shen"> Shen </option>
         </select>
     </span>
     <br> <br>
@@ -85,7 +84,7 @@
         <div id="illaoi">
                 <p style="color: green"> Illaoi, A Sacerdotisa Craquiém </p>
            <img src="img/illaoi2.jpg">
-                <p style="color: green"> O poderoso porte físico de Illaoi só perde para sua fé indomável. 
+                <p style="color: green" id="text_illaoi"> O poderoso porte físico de Illaoi só perde para sua fé indomável. 
                 Como profetisa do Grande Cráquem, ela usa um gigantesco totem dourado para arrancar o 
                 espírito de seus inimigos de seus corpos e estilhaçar a sua percepção da realidade. 
                 Todos os que desafiam a ''Verdadeira Portadora de Nagacáburos'' logo descobrem que 
@@ -95,7 +94,7 @@
         <div id="nunu">
                 <p style="color: rgb(0, 0, 167)"> Nunu E Willump, O Garoto e Seu Yeti</p>
            <img src="img/nunu2.jpg">
-                <p style="color: rgb(0, 0, 167)"> Era uma vez um garoto que queria provar a todos que poderia ser um herói indo matar uma fera horripilante... 
+                <p style="color: rgb(0, 0, 167)" id="text_nunu"> Era uma vez um garoto que queria provar a todos que poderia ser um herói indo matar uma fera horripilante... 
                 mas que no fim descobriu que esse monstro era um solitário yeti mágico que só queria um amigo. 
                 Unidos por um antigo poder e compartilhando um amor por bolas de neve, Nunu e Willump agora vagavam ferozmente 
                 através de toda Freljord, dando um sopro de vida em aventuras imaginárias. 
@@ -106,7 +105,7 @@
         <div id="pantheon">
                 <p style="color: rgb(0, 77, 192)"> Pantheon, A Lança Indestrútivel </p>
            <img src="img/pant2.jpg">
-                <p style="color: rgb(0, 77, 192)"> Antes um relutante portador do Aspecto da Guerra, Atreus, recusando-se a sucumbir a um golpe que arrancou 
+                <p style="color: rgb(0, 77, 192)" id="text_pant"> Antes um relutante portador do Aspecto da Guerra, Atreus, recusando-se a sucumbir a um golpe que arrancou 
                 estrelas do céu, conseguiu sobreviver quando o poder celestial dentro dele foi morto. 
                 Com o tempo, ele aprendeu a usar o poder de sua própria mortalidade e da persistente resiliência que veio junto a ela. 
                 Hoje Atreus se opõe a tudo o que é divino com o renascimento de um novo Pantheon, e sua inabalável determinação 
@@ -115,9 +114,9 @@
         </div>
 <hr>
         <div id="trist">
-                <p style="color: rgb(115, 0, 192)"> Trsitana, O Olho do Crepúsculo </p>
+                <p style="color: rgb(255, 94, 0)"> Trsitana, O Olho do Crepúsculo </p>
            <img src="img/trist.png">
-                <p style="color: rgb(115, 0, 192)"> Apesar de muitos outros yordles focarem sua energia em descobertas, invenções ou simplesmente travessuras, 
+                <p style="color: rgb(255, 94, 0)" id="text_trist"> Apesar de muitos outros yordles focarem sua energia em descobertas, invenções ou simplesmente travessuras, 
                 Tristana sempre se inspirou nas aventuras de grandes guerreiros. Ela ouviu muito sobre Runeterra, suas facções
                 e suas guerras, e acreditava que sua raça também poderia se tornar digna de lendas. Pisando no mundo pela primeira vez,
                 ela pegou seu canhão de confiança, Boomer, e agora salta para a batalha com coragem e otimismo inabaláveis.</p>
@@ -126,7 +125,7 @@
         <div id="shen">
                 <p style="color: rgb(115, 0, 192)"> Shen, O Olho do Crepúsculo </p>
            <img src="img/shen2.jpg">
-                <p style="color: rgb(115, 0, 192)"> Para os guerreiros ionianos sigilosos conhecidos como Kinkou, Shen, o Olho do Crepúsculo, é um líder. 
+                <p style="color: rgb(115, 0, 192)" id="text_shen"> Para os guerreiros ionianos sigilosos conhecidos como Kinkou, Shen, o Olho do Crepúsculo, é um líder. 
                 Ele busca permanecer livre da confusão das emoções, preconceito ou ego, caminhando pelo caminho nunca visto do 
                 julgamento imparcial entre o reino dos espíritos e o mundo físico. Incumbido de impor harmonia entre os dois, 
                 Shen empunha lâminas de aço e energia arcana contra qualquer um que ameaçar o equilíbrio.
@@ -138,16 +137,4 @@
 </body>
 </html>
 
-<script>
-    var selec_champ = champ.value;
-
-    function select_lane() {
-        area.innerHTML = `${lane.value}`;
-        
-        
-    }
-
-    function escolher() {
-        
-    }
-</script>
+<script src="../public/js/test.js"></script>

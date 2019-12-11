@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 
 .hub {
     background-color: rgba(255, 255, 255, 0.829);
@@ -54,6 +56,15 @@ width: 531px;
 height: 380px;
 border-radius: 2px;
 border: 3px solid rgb(133, 77, 26);
+}
+
+.ll {
+    width: 90px;
+    margin-top: 320px;
+    color: #1cac1c;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+
 }
 
 /*
