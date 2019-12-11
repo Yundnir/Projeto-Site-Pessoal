@@ -3,12 +3,16 @@
     background-color: rgba(255, 255, 255, 0.829);
     border-radius: 15px;
     border: 5px darkolivegreen solid;
-    height: 2000px;
+    height: 4000px;
     width: 1100px;
     margin: auto;
 }
-
-#menu ul {
+.menu {
+    position: relative;
+    width: 100%;
+    height: 10%;
+}
+.menu ul {
     padding:0px;
     margin:0px;
     background-color:rgb(49, 48, 107);
@@ -17,10 +21,10 @@
     border: 5px solid black;
     height: 75px;
 }
-#menu ul li { 
+.menu ul li { 
     display: inline; 
 }
-#menu ul li a {
+.menu ul li a {
     padding: 2px 10px;
     height: 27px;
     display: inline-block;
@@ -31,13 +35,13 @@
     padding: 20px;
     margin-left: 92%;
 }
-#menu ul li a:hover {
+.menu ul li a:hover {
     background-color:rgb(7, 5, 141);
     color: rgb(255, 230, 0);
     border-bottom: 5px solid rgb(255, 217, 0);
 }
 
-#menu #imag img{
+.menu #imag img{
     height: 80px;
     width: 180px;
     margin-left: 43%;
@@ -67,55 +71,91 @@ border: 3px solid rgb(133, 77, 26);
     border-radius: 2px;
     background-color: darkgray;
     width: 1000px;
-    height: 1300px;
+    height: 3000px;
 }
 
+#illaoi {
+    background-color: rgb(53, 32, 0);
+    margin: 15px 15px 30px 15px;
+    padding: 2px 2px 2px 2px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
 #illaoi img{
     margin-top: 10px;
     margin-left: 20px;
     width: 280px;
     height: 235px;
-    margin-right: 65%;
+    /* margin-right: 65%; */
     border-radius: 7px;
     border: 3px solid black;
 }
 
+
+#nunu {
+    background-color: rgb(147, 160, 177);
+    margin: 30px 15px 30px 15px;
+    padding: 2px 2px 2px 2px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
 #nunu img{
     margin-top: 10px;
     margin-left: 20px;
     width: 280px;
     height: 235px;
-    margin-right: 65%;
+    /* margin-right: 65%; */
     border-radius: 7px;
     border: 3px solid black;
 }
 
+#pantheon {
+    background-color: rgb(75, 64, 0);
+    margin: 30px 15px 30px 15px;
+    padding: 2px 2px 2px 2px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
 #pantheon img{
     margin-top: 10px;
     margin-left: 20px;
     width: 280px;
     height: 235px;
-    margin-right: 65%;
+    /* margin-right: 65%; */
     border-radius: 7px;
     border: 3px solid black;
 }
 
-#ashe img{
+#trist {
+    background-color: rgb(94, 73, 6);
+    margin: 30px 15px 30px 15px;
+    padding: 2px 2px 2px 2px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+#trist img{
     margin-top: 10px;
     margin-left: 20px;
     width: 280px;
     height: 235px;
-    margin-right: 65%;
+    /* margin-right: 65%; */
     border-radius: 7px;
     border: 3px solid black;
 }
 
+#shen {
+    background-color: rgb(31, 28, 36);
+    margin: 30px 15px 30px 15px;
+    padding: 2px 2px 2px 2px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
 #shen img{
     margin-top: 10px;
     margin-left: 20px;
     width: 280px;
     height: 235px;
-    margin-right: 65%;
+    /* margin-right: 65%; */
     border-radius: 7px;
     border: 3px solid black;
 }
